@@ -9,16 +9,27 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  #Agregar Packages  
   http: 0.12.0+2
+  splashscreen: ^1.2.0
   
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.7.2"
 
+flutter_icons:
+  android: "launcher_icon" 
+  ios: true
+  image_path: "assets/pokedex.png"
 
 flutter:
 
   uses-material-design: true
 
+  assets:
+    
+    - assets/
