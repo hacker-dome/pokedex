@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:pokedex/src/page/login_page.dart';
+
 
 void main() => runApp(MainApp());
 
