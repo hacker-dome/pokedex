@@ -24,21 +24,22 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return new SplashScreen(
-        seconds: 15,
+        seconds: 10,
         navigateAfterSeconds: new AfterSplash(),
-        title: new Text('Welcome In SplashScreen',
+        title: 
+        new Text('POKEDEX 1568',
           style: new TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20.0
           ),),
-
+        
         image: new Image.asset('assets/pokedex.png'),
 
         backgroundColor: Colors.white70,
         styleTextUnderTheLoader: new TextStyle(),
         photoSize: 100.0,
-        onClick: ()=>print("Cerbero Dev"),
-        loaderColor: Colors.black45
+        onClick: ()=>print("Hacker Dome"),
+        loaderColor: Colors.red
     );
   }
 }
@@ -49,17 +50,17 @@ class AfterSplash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-          title: new Text("Welcome In SplashScreen Package",
-            style: new TextStyle(
-              fontStyle: FontStyle.italic,
-              color: Colors.black54
-            ),
-          ),
-          automaticallyImplyLeading: false,
-          backgroundColor: Colors.white70,
-          centerTitle: true,
-      ),
+     //appBar: new AppBar(
+     //    title: new Text("Welcome In SplashScreen Package",
+     //      style: new TextStyle(
+     //        fontStyle: FontStyle.italic,
+     //        color: Colors.black54
+     //      ),
+     //    ),
+     //    automaticallyImplyLeading: false,
+     //    backgroundColor: Colors.white70,
+     //    centerTitle: true,
+     //),
       body: PokedexScreen(),
     );
   }
