@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return new SplashScreen(
-        seconds: 10,
+        seconds: 5,
         navigateAfterSeconds: new AfterSplash(),
         title: 
         new Text('POKEDEX 1568',
