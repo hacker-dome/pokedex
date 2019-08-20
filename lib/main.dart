@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:pokedex/src/page/hijo_page.dart';
-import 'package:pokedex/src/page/login_page.dart';
+//import 'package:pokedex/src/page/hijo_page.dart';
+//import 'package:pokedex/src/page/login_page.dart';
 import 'package:pokedex/src/pokedex/pokedex_screen.dart';
 
 
