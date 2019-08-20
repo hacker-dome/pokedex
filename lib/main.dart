@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
         seconds: 5,
         navigateAfterSeconds: new AfterSplash(),
         title: 
-        new Text('POKEDEX 1568',
+        new Text('POKEDEX 1568, By: Hacker Dome',
           style: new TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20.0
