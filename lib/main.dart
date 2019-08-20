@@ -9,7 +9,7 @@ import 'package:splashscreen/splashscreen.dart';
 
 void main() => runApp(
     new MaterialApp(
-      home:MainApp(),
+      home:MyApp(),
       ));
 
     
@@ -24,8 +24,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return new SplashScreen(
-        seconds: 5,
-        navigateAfterSeconds: new MainApp(),
+        seconds: 15,
+        navigateAfterSeconds: new AfterSplash(),
         title: new Text('Welcome In SplashScreen',
           style: new TextStyle(
               fontWeight: FontWeight.bold,
@@ -44,15 +44,23 @@ class _MyAppState extends State<MyApp> {
 }
 
 
-class MainApp extends StatelessWidget {
 
+class AfterSplash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(primaryColor: Colors.blueGrey, accentColor: Colors.blue),
-      home: Scaffold(
-        body: PokedexScreen(),
+    return new Scaffold(
+      appBar: new AppBar(
+          title: new Text("Welcome In SplashScreen Package",
+            style: new TextStyle(
+              fontStyle: FontStyle.italic,
+              color: Colors.black54
+            ),
+          ),
+          automaticallyImplyLeading: false,
+          backgroundColor: Colors.white70,
+          centerTitle: true,
       ),
+      body: PokedexScreen(),
     );
   }
 }
