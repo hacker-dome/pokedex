@@ -1,6 +1,6 @@
-# pokedex
+# Pokedex
 
-A new Flutter project.
+Aplicacion desarrollada en el 1er Meetup de la comunidad Hacker Dome en la Universidad Autonoma del Peru.
 
 ## Getting Started
 
